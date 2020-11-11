@@ -1,0 +1,59 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+    <head> 
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Nguyen's Exercise 1</title> 
+        <link rel="stylesheet" href="/styles.css" type='text/css'>
+    </head> 
+    <body> 
+        <h1><a href="/">Link to Start Page</a></h1> 
+        <h1>Nguyen's Exercise 1 for hw9b: Processing a Form</h1> 
+        <h2>Nguyen's Sample Form</h2>
+    
+        <form>
+            <p>
+                <label for="name">Name</label>:
+                <input type="text" name="name" id="name" required> <br>
+                <label for="email">Email</label>:
+                <input type="text" name="email" id="email"  placeholder="name@domain" required> <br>
+            </p>
+            <p>Payment Type:</p>
+            <p>
+                <input type="radio" name="payment" id="payment" value="Cash" >
+                <label for="cash">Cash</label>
+                <br>
+                <input type="radio" name="payment" id="payment" value="Credit Card">
+                <label for="credit">Credit Card</label>
+                <br>
+                <input type="radio" name="payment" id="payment" value="Google Pay">
+                <label for="google">Google Pay</label>
+                <br>
+                <input type="radio" name="payment" id="payment" value="Apple Pay">
+                <label for="apple">Apple Pay</label>
+                <br>
+            </p>
+            <p>
+                <input type="checkbox" id="promotions" name="promotions" value="Sign">
+                <label for="promotions"> Sign me up for special promotions</label><br>
+            </p>
+            <p>
+                <label for="location">Preferred Location:</label>
+                <select name="locations" id="locations">
+                <option value="Los Angeles">Los Angeles</option>
+                <option value="Orange County">Orange County</option>
+                <option value="Riverside">Riverside</option>
+                <option value="San Diego">San Diego</option>
+                </select>
+                <br><br>
+            </p>
+
+            <input type="submit" value="Submit">
+            <input type="button" id="button" value="Cancel">
+        </form> <br>
+
+        <p id = 'result'></p>
+        
+        <script src="/ex1.js"></script> 
+    </body> 
+</html>
